@@ -1,0 +1,80 @@
+{
+  "pantalla": "Reubicar producto — SubLPN",
+  "fecha": "2026-09-29",
+  "cobertura_hu": "100%",
+  "criterios": [
+    {
+      "id": "layout-dos-paneles",
+      "descripcion": "Pantalla dividida en Origen y Destino",
+      "estado": "cubierto"
+    },
+    {
+      "id": "origen-localidad-lpn",
+      "descripcion": "Ingreso de Localidad y LPN origen",
+      "estado": "cubierto"
+    },
+    {
+      "id": "origen-sublpn-condicional",
+      "descripcion": "Si LPN contiene SubLPNs se muestra SubLPN origen como opcional; el producto permanece habilitado para ingresar SubLPN o producto",
+      "estado": "cubierto",
+      "demo": "A-01-01 → LPN-1001"
+    },
+    {
+      "id": "origen-sin-sublpn",
+      "descripcion": "Si LPN no tiene SubLPN continúa a Producto",
+      "estado": "cubierto",
+      "demo": "A-01-01 → LPN-1002"
+    },
+    {
+      "id": "validacion-producto",
+      "descripcion": "Producto validado dentro de LPN y SubLPN si aplica",
+      "estado": "cubierto"
+    },
+    {
+      "id": "detalle-inventario",
+      "descripcion": "Detalle con Producto, Cantidad, Lote, Serial, Atributo 1-3, Estatus",
+      "estado": "cubierto"
+    },
+    {
+      "id": "confirmar-cantidad",
+      "descripcion": "Confirmación de cantidad a reubicar con tope del inventario",
+      "estado": "cubierto"
+    },
+    {
+      "id": "destino-localidad-lpn",
+      "descripcion": "Ingreso de Localidad y LPN destino (existente o nueva)",
+      "estado": "cubierto"
+    },
+    {
+      "id": "destino-sublpn-condicional",
+      "descripcion": "Si LPN destino tiene SubLPNs se muestra el campo",
+      "estado": "cubierto",
+      "demo": "B-02-01 → LPN-9001"
+    },
+    {
+      "id": "crear-sublpn",
+      "descripcion": "Botón Crear SubLPN y atajo F3 muestran campo SubLPN destino",
+      "estado": "cubierto"
+    },
+    {
+      "id": "mover-a-lpn-o-sublpn",
+      "descripcion": "Permite mover producto a LPN o a SubLPN",
+      "estado": "cubierto"
+    },
+    {
+      "id": "exito",
+      "descripcion": "Toast: La reubicación se realizó correctamente.",
+      "estado": "cubierto"
+    },
+    {
+      "id": "error",
+      "descripcion": "Toast error: No fue posible realizar la reubicación. (Shift+Reubicar o origen=destino)",
+      "estado": "cubierto"
+    },
+    {
+      "id": "historico",
+      "descripcion": "Payload de movimiento registrado en consola para Histórico",
+      "estado": "cubierto"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "pantalla": "Reubicar producto — SubLPN",
+  "fecha": "2026-09-29",
+  "referencia": "Mockup Reubicar producto + tokens WEP desktop (topbar, sidebar, asn-print)",
+  "revision_ux_ui": [
+    {
+      "criterio": "Consistencia visual con shell WEP",
+      "estado": "ok",
+      "nota": "Topbar, sidebar, tipografía Inter/Roboto, tokens --asn-*"
+    },
+    {
+      "criterio": "Jerarquía tipográfica",
+      "estado": "ok",
+      "nota": "Título 21px centrado, paneles Origen/Destino con header gris, labels Roboto Bold 13px"
+    },
+    {
+      "criterio": "Layout vs mockup",
+      "estado": "ok",
+      "nota": "Acciones Reubicar/Cancelar, dos columnas, detalle inventario anidado, búsqueda localidad con botón azul"
+    },
+    {
+      "criterio": "Legibilidad y overflow",
+      "estado": "ok",
+      "nota": "ellipsis en celdas, scroll horizontal en tabla, overflow-wrap en toasts"
+    },
+    {
+      "criterio": "Targets accesibles",
+      "estado": "ok",
+      "nota": "Botones ≥40px / 32px mínimos; focus-visible; labels asociados; aria-live"
+    },
+    {
+      "criterio": "Responsive",
+      "estado": "ok",
+      "nota": "Columnas apiladas <1024px; padding y acciones adaptados <720px"
+    },
+    {
+      "criterio": "Reduced motion",
+      "estado": "ok",
+      "nota": "Animaciones de toast desactivadas con prefers-reduced-motion"
+    }
+  ]
+}
